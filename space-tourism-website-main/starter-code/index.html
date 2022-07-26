@@ -1,27 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!--=============== FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <!--=============== CSS & JAVASCRIPT ===============-->
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/javascript/script.js"></script>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/home/logo mobile.svg"
+            alt="logo"
+            class="logo-img"
+          />
+        </a>
 
-  Explore
+        <!--=============== NAVIGATION ===============-->
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">00</span>
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="destination-moon.html" class="nav-link">
+                <span class="link-number">01</span>
+                DESTINATION
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">02</span>
+                CREW
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">03</span>
+                TECHNOLOGY
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-</body>
+        <button class="humberger-menu">
+          <img
+            src="./assets/home/nav menu.svg"
+            alt="humberger menu"
+            class="menu-open"
+          />
+          <img
+            src="./assets/home/close nav.svg"
+            alt="close button"
+            class="menu-close"
+          />
+        </button>
+      </div>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main>
+      <!--=============== HERO ===============-->
+      <section class="hero">
+        <div class="container">
+          <h2 class="tertiary-header">SO, YOU WANT TO TRAVEL TO</h2>
+          <h1 class="primary-header">SPACE</h1>
+          <div class="main-desc">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </div>
+          <a href="#" class="large-button">EXPLORE</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
