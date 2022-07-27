@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!--=============== FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS & JAVASCRIPT ===============-->
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/javascript/script.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="dest-moon">
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/home/logo mobile.svg"
+            alt="logo"
+            class="logo-img"
+          />
+        </a>
+
+        <!--=============== NAVIGATION ===============-->
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">00</span>
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="destination.html" class="nav-link">
+                <span class="link-number">01</span>
+                DESTINATION
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">02</span>
+                CREW
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="link-number">03</span>
+                TECHNOLOGY
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="humberger-menu">
+          <img
+            src="./assets/home/nav menu.svg"
+            alt="humberger menu"
+            class="menu-open"
+          />
+          <img
+            src="./assets/home/close nav.svg"
+            alt="close button"
+            class="menu-close"
+          />
+        </button>
+      </div>
+    </header>
+
+    <div class="tertiary-header color-white">
+      <span class="dest-num">01</span>
+      Pick your destination
+    </div>
+
+    <div class="moon-hero">
+      <img
+        src="./assets/destination/image-moon.webp"
+        alt="moon image"
+        class="moon-img"
+      />
+    </div>
+    <!--=============== DESTINATIONS ===============-->
+
+    <article class="destinations container">
+      <ul class="destinations-btns-container">
+        <li class="destination-btn destination-btn-active" data-tab="1">
+          Moon
+        </li>
+        <li class="destination-btn" data-tab="2">MARS</li>
+        <li class="destination-btn" data-tab="3">EUROPA</li>
+        <li class="destination-btn" data-tab="4">TITAN</li>
+      </ul>
+
+      <!-- MOON -->
+      <div
+        class="destination-content destination-content-1 destination-content-active"
+      >
+        <h2 class="secondary-header">MOON</h2>
+        <p class="destination-desc">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="distance">
+          <span class="distance-span">AVG. DISTANCE</span>
+          384,400 km
+        </div>
+        <div class="travel-time">
+          <span class="travel-span">Est. travel time</span>
+          3 days
+        </div>
+      </div>
+      <!-- MARS -->
+      <div class="destination-content destination-content-2">
+        <h2 class="secondary-header">MARS</h2>
+        <p class="destination-desc">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+        <div class="distance">
+          <span class="distance-span">AVG. DISTANCE</span>
+          225 MIL. km
+        </div>
+        <div class="travel-time">
+          <span class="travel-span">Est. travel time</span>
+          9 months
+        </div>
+      </div>
+      <!-- EUROPA -->
+      <div class="destination-content destination-content-3">
+        <h2 class="secondary-header">EUROPA</h2>
+        <p class="destination-desc">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of
+          ice skating, curling, hockey, or simple relaxation in your snug
+          wintery cabin.
+        </p>
+        <div class="distance">
+          <span class="distance-span">AVG. DISTANCE</span>
+          628 MIL. km
+        </div>
+        <div class="travel-time">
+          <span class="travel-span">Est. travel time</span>
+          3 years
+        </div>
+      </div>
+      <!-- TITAN -->
+      <div class="destination-content destination-content-4">
+        <h2 class="secondary-header">TITAN</h2>
+        <p class="destination-desc">
+          The only moon known to have a dense atmosphere other than Earth, Titan
+          is a home away from home (just a few hundred degrees colder!). As a
+          bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <div class="distance">
+          <span class="distance-span">AVG. DISTANCE</span>
+          1.6 BIL. km
+        </div>
+        <div class="travel-time">
+          <span class="travel-span">Est. travel time</span>
+          7 years
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

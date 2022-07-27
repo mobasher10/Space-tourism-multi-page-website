@@ -17,6 +17,7 @@ body {
   background: url(../home/background-home-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 ul {
@@ -88,6 +89,10 @@ img {
   text-transform: uppercase;
 }
 
+.link-number {
+  font-weight: 700;
+}
+
 .nav-active .navigation {
   opacity: 1;
   pointer-events: auto;
@@ -151,7 +156,7 @@ img {
 }
 
 .large-button::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -168,4 +173,110 @@ img {
 .large-button:focus::after {
   opacity: 1;
   transform: scale(1.5);
+}
+
+/* ------------------- */
+/* MOON     */
+/* ------------------- */
+
+.dest-moon {
+  background: url(../destination/background-destination-desktop.jpg);
+  background-size: cover;
+}
+.dest-num {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.moon-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--mrg-normal) 0;
+}
+
+.moon-img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.destinations-btns-container {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.destination-btn {
+  background: none;
+  border: none;
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.25rem;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+.destination-btn:hover {
+  border-bottom: 3px rgba(255, 255, 255, 0.5) solid;
+}
+
+.destination-btn-active {
+  color: var(--clr-white);
+  border-bottom: 3px var(--clr-white) solid;
+}
+.destination-content {
+  display: none;
+}
+
+.distance {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  margin-bottom: 3.2rem;
+}
+
+.distance-span {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: var(--color-light-grey);
+}
+
+.travel-time {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.travel-span {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: var(--color-light-grey);
+}
+
+.destination-content-active {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
