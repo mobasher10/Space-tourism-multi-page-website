@@ -80,6 +80,7 @@ img {
 }
 
 .nav-link {
+  padding: 1rem;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -161,16 +162,14 @@ img {
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* background: ; */
   background: rgb(255, 255, 255, 0.15);
-
   border-radius: 50%;
   opacity: 0;
   transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
 
 .large-button:hover::after,
-.large-button:focus::after {
+.large-button:focus:active {
   opacity: 1;
   transform: scale(1.5);
 }
@@ -185,21 +184,24 @@ img {
 }
 .dest-num {
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.7);
-  opacity: 0.7;
   font-weight: 700;
 }
 
-.moon-hero {
+.destination-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: var(--mrg-normal) 0;
 }
 
-.moon-img {
+.destination-img {
+  display: none;
+}
+
+.destination-img-active {
+  display: block;
   width: 20rem;
   height: 20rem;
+  margin: var(--mrg-normal) 0;
 }
 
 .destinations-btns-container {
@@ -279,4 +281,96 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+}
+
+/* ------------------- */
+/* CREW HTML     */
+/* ------------------- */
+
+.crew {
+  background: url(../crew/background-crew-mobile.jpg);
+  background-size: cover;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crew-img-container {
+  text-align: center;
+  border-bottom: 2px solid #383b4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.crew-img {
+  display: none;
+}
+
+.crew-img-active {
+  margin-top: 3.2rem;
+  text-align: center;
+  width: 20rem;
+  display: block;
+  text-align: center;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+.dots-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  background: #ffffff;
+  opacity: 0.17;
+  cursor: pointer;
+}
+
+.dots-dot:hover {
+  opacity: 0.5;
+  background: #fff;
+}
+
+.dot-active:hover {
+  opacity: 1;
+  background: #fff;
+}
+
+.dot-active {
+  opacity: 1;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.dots-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.dots-content-active {
+  display: block;
+}
+
+/* ------------------- */
+/* TECHNOLOGY HTML     */
+/* ------------------- */
+
+.technology {
+  background: url(../technology/background-technology-desktop.jpg);
+  background-size: cover;
 }

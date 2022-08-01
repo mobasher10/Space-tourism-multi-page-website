@@ -31,8 +31,16 @@
   text-align: center;
   letter-spacing: 2.7px;
   text-transform: uppercase;
-
   color: #d0d6f9;
+}
+
+.dest-num {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  opacity: 0.25;
 }
 
 .color-white {
@@ -49,4 +57,37 @@
   color: var(--color-light-grey);
   padding-bottom: 3.2rem;
   border-bottom: 1px solid #383b4b;
+}
+
+.crew-job {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  margin-top: 3.2rem;
+}
+
+.crew-name {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 1.6rem;
+}
+
+.crew-desc {
+  margin-top: 1.6rem;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #d0d6f9;
 }
